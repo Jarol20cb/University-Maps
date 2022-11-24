@@ -298,8 +298,14 @@ a{
 @media (max-width:800px){
     .if-header{
         
-        height: 120px;
+        height: 320px;
     }
+
+    .footerframe
+{
+height: 576px;
+z-index: -1;
+}
 
     .nav__menu{
         display: block;
@@ -390,7 +396,7 @@ a{
 
     .if-header{
         
-        height: 140px;
+        height: 300px;
     }
 
     .hero__title{
