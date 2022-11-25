@@ -1,105 +1,149 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;800&display=swap');
-
 *{
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Nunito', sans-serif;
-    font-size: 20px;
-    z-index: 1;
-}
-
-
-.hero{
-    background-color: #1b3039;
+  }
+  
+  .main-header{
+    height: 80px;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
-    height: 85px;
-    padding: 5px 10%;
+    background-color: #28343c;
+    padding: 0 2rem;
+  }
+  
+  .main-logo{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(255, 255, 255);
+    font-size:32px;
+    text-decoration:none;
+  }
+  
+  .main-nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    margin-left: -100%;
+    transition: all .2s linear;
+    background-color: rgba(255, 255, 255, 0.7);
+    z-index: 100;
+  }
+  
+  .main-nav.show{
+    margin-left: 0;
+  }
+  
+  .nav-links{
+    
+    background-color:#28343c;
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    height: 100%;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  
+  .link-item{
+    margin-top: 2rem;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    position: relative;
+  }
+
  
-}
-
-.hero .logo{
-    cursor: pointer;
-    margin-right: auto;
-}
-
-.hero .logo img{
-    height: 70px;
-    width: auto;
-    transition: all 0.3s;
-}
-
-.hero .logo img:hover{
-    transform: scale(1.2);
-}
-
-.hero .nav-links{
-    list-style: none;
-    text-align: justify;
-}
-
-.hero .nav-links li{
-    display: inline-block;
-    padding: 0 10px;    
-}
-
-.hero .nav-links li:hover{
-    transform: scale(1.1);
-}
-
-.hero .nav-links a{
-    font-size: 700;
-    color: #eceff1;
-    text-decoration: none;    
-}
-
-.hero .nav-links li a:hover{
-    color: #ffbc0e;
-}
-
-.hero .btn button{
-    margin-left: 20px;
-    font-weight: 700;
-    color: #1b3039;
-    padding: 9px 25px;
-    background: #eceff1;
+  
+  /*color scroll*/
+  .link-item::after {
+    position: absolute;
+    content: "";
+    background-color: rgb(255, 255, 255);
+    bottom: -5px;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    transition: 0.3s ease all;
+  }
+  
+  .link-item:hover::after {
+    width: 100%;
+  }
+  
+  .button-menu{
+    z-index: 200;
+    width: 40px;
+    height: 40px;
     border: none;
-    border-radius: 50px;
+    display: flex;
+    background: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     cursor: pointer;
-    transition: all 0.3s ease 0s;
-}
+  }
+  
+  .button-menu span{
+    width: 37px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    background: #ffffff;
+    border-radius: 3px;
+    transform-origin: 4px 0px;
+    transition: all .2s linear;
+  }
+  
+  .button-menu.close span {
+    opacity: 1;
+    transform: rotate(45deg) translate(0px, 0px);
+    background: yellow;
+  }
+  
 
-.hero .btn button:hover{
-    background-color: #e2f1f8;
-    color: #ffbc0e;
-    transform: scale(1.1);
-}
-
-@media (max-width:800px){
-
-    .hero .nav-links a{
-        display: inline-flexbox;
-        font-size: 10px;
-        padding: 5 px 0px;
+  .button-menu.close span:nth-child(2){
+    transform: rotate(-45deg) translate(-8px, 5px);
+  }
+  
+  .button-menu.close span:nth-child(3){
+    display: none;
+  }
+  
+  
+  @media (min-width:900px) {
+    .button-menu{
+      display: none;
+    }
+  
+    .main-logo{
+      flex-basis: 30%;
+      text-align: center;
 
     }
-    .hero .btn button
-        {
+  
+    .main-nav{
+      position: static;
+      margin-left: 0;
+      flex-basis: 70%;
+      height: 100%;
+    }
 
-            padding: 2px 18px;
-        }
+  
+    .nav-links{
+      width: 100%;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: flex-end;
+      background: #28343c;
+    }
+  
+    .link-item{
+      display: inline-block;
+      margin-top: 0;
+      margin-right: 2rem;
 
-        .hero .logo img{
-            height: 40px;
-            transition: all 0.3s;
-        }
-        .hero .nav-links li{
-            display: inline-block;
-            padding: 0 5px;    
-        }
-        .hero .nav-links li{
-        text-align:center;
-        }
-}
+    }
+  }
