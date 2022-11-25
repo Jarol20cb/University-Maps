@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
-/*@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css');*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 *{
     margin: 0;
     box-sizing: border-box;
+    
 }
 html {
     line-height: 1.15;
@@ -39,7 +39,7 @@ a {
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 a{
     opacity: 2;
@@ -133,6 +133,7 @@ a{
     text-decoration: none;
     padding: 25px 76px;
     border-radius: 32px;
+    margin-top: 3px;
 
 }
 
@@ -144,6 +145,7 @@ a{
     text-decoration: none;
     padding: 5px 13px;
     border-radius: 32px;
+    margin-top: 3px;
 }
 
 
@@ -199,10 +201,11 @@ a{
 
 .download {
     background-color: #0000d6;
-    background-image: radial-gradient(#444cf7 0.5px, transparent 0.5px), radial-gradient(#444cf7 0.5px, #e5e5f7 0.5px);
+    background-image: radial-gradient(#444cf7 0.5px, transparent 0.5px), radial-gradient(#444cf7 0.5px, #ffffff 0.5px);
     background-size: 20px 20px;
     background-position: 0 0, 10px 10px;
     overflow: hidden;
+    
 }
 
 .download__container{
@@ -298,8 +301,14 @@ a{
 @media (max-width:800px){
     .if-header{
         
-        height: 120px;
+        height: 320px;
     }
+
+    .footerframe
+{
+height: 576px;
+z-index: -1;
+}
 
     .nav__menu{
         display: block;
@@ -390,7 +399,7 @@ a{
 
     .if-header{
         
-        height: 140px;
+        height: 300px;
     }
 
     .hero__title{
