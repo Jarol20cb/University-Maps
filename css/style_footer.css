@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 h2
 {
@@ -74,4 +74,11 @@ padding: 30px;
         grid-gap:30px;
         padding: 35px 0px;
     }
+    .footer-html .group-1 .box figure img{
+        width: 95px;
+    }
+    .footer-html .group-2 small{
+        font-size: 10px;
+    }
+
 }

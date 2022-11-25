@@ -9,6 +9,10 @@
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="css/style_header.css">
+    <link rel="stylesheet" href="css/style_footer.css">
+    <link rel="stylesheet" href="css/functionalities.css">
+    <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
 
 
 
@@ -19,7 +23,26 @@
 
 
     <header class="hero">
-        <iframe class="if-header" src="header.html" frameborder="0"></iframe>
+        <header class="main-header" >
+            <a class="main-logo" href="" >
+              <strong>University Maps</strong> 
+            </a>
+            <nav id="nav" class="main-nav" >
+              <div class="nav-links" >
+                <a class="link-item" href="index.html" >inicio</a>
+                <a class="link-item" href="about.html" >sobre nosotros</a>
+                <a class="link-item" href="video.html" >Sobre la aplicacion</a>
+                <a class="link-item" href="contact.html" >Contacto</a>
+                <a class="link-item" href="#" ><img src="images/translate.ico" alt=""></a>
+    
+              </div>
+            </nav>
+            <button id="button-menu" class="button-menu" >
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+          </header>
        <div>
         <section id="textfirst" class="hero__container container">
             <br><br><br><br><br><br><br><br><br>
@@ -116,6 +139,67 @@
             </div>
         </section>
 
+
+        <section class="funtion-class">
+            <div class="contenedor">
+                <center><strong><h1 id="tittle-funtion">Funcionalidades</h1></strong></center>
+                  <div class="contenedor-cards">            
+                    <div class="contenedor-card-item">
+                          <div class="contenedor-card-item-wrapper">
+                            <img src="images/login.jpeg" alt="">
+                            <div class="contenedor-info">
+                                  <div class="info">
+                                    <p class="titulo"><strong>Inicia de sesion</strong> </p>
+                                    <span class="categoria">Ingresa con tu cuenta o crea uno dentro de la aplicacion.</span>
+                                  </div>
+                                  <div class="fondo"></div>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="contenedor-card-item">
+                          <div class="contenedor-card-item-wrapper">
+                            <img src="images/university.jpeg" alt="">
+                            <div class="contenedor-info">
+                                  <div class="info">
+                                    <p class="titulo"><strong>Busca tu Universidad</strong></p>
+                                    <span class="categoria">Busca tu universidad preferida y guardalo.</span>
+                                  </div>
+                                  <div class="fondo"></div>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="contenedor-card-item">
+                          <div class="contenedor-card-item-wrapper">
+                            <img src="images/map-configure.jpeg" alt="">
+                            <div class="contenedor-info">
+                                  <div class="info">
+                                    <p class="titulo"><strong>Desplazate</strong></p>
+                                    <span class="categoria">Guiate con la aplicacion a donde tu quieras dentro de tu universidad.</span>
+                                  </div>
+                                  <div class="fondo"></div>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="contenedor-card-item" id="card_finish">
+                          <div class="contenedor-card-item-wrapper">
+                            <img src="images/fail-conection.jpeg" alt="">
+                            <div class="contenedor-info">
+                                  <div class="info">
+                                    <p class="titulo"><strong>Mapas sin conexion</strong></p>
+                                    <span class="categoria">Guarda y descarga Tus mapas y usalos sin conexion a internet.</span>
+                                  </div>
+                                  <div class="fondo"></div>
+                            </div>
+                          </div>
+                    </div>
+                   </div>
+                   <br><br>
+            </div>
+
+        </section>
+
+        
+
         <section class="download">
             <div class="download__container container">
                 <div class="knowledege__texts">
@@ -132,10 +216,10 @@
                         <p> Descarga nuestra aplicacion movil disponible para Android y IOS.</p>
                         <br>
                        
-                    <a href="https://play.google.com/store/games?hl=es&pli=1" class="btndownload"><img src="images/googleplay.png" alt=""></a> <br><br>
-                    <a href="https://www.apple.com/la/app-store/" class="btndownload"><img src="images/appstore.png" alt=""></a><br><br>
+                    <a href="https://play.google.com/store/games?hl=es&pli=1" class="btndownload"><img src="images/googleplay.png" alt=""></a> <br>
+                    <a href="https://www.apple.com/la/app-store/" class="btndownload"><img src="images/appstore.png" alt=""></a><br>
                 
-                        <a href="https://www.figma.com/proto/NDfSSkPPUIGZ7BuD7QIJ3Y/Untitled?node-id=4%3A648&scaling=contain&page-id=0%3A1&starting-point-node-id=3%3A643" class="btndemo">Ver Demo</a>
+                        <a href="https://www.figma.com/proto/NDfSSkPPUIGZ7BuD7QIJ3Y/Untitled?node-id=4%3A648&scaling=contain&page-id=0%3A1&starting-point-node-id=3%3A643" class="btndemo"><strong>Ver Demo</strong></a>
                     
                         
                         
@@ -159,12 +243,41 @@
 
 
     </main>
+    <footer class="footer-html">
+        <div class="group-1">
+            <div class="box">
+                <figure>
+                    <a href="#">
+                        <img src="images/favicon.ico" alt="Logo of the university maps">
+                    </a>
+                </figure>
+            </div>
+            <div class="box">
+                <h2>Nuestro Proposito</h2>
+                <p>Queremps dar solucion a un problema que es muy frecuente para los nuevos estudiantes y profesores que no conocen las instalaciones de su centro de estudios</p>
+                
+            </div>
+            <div class="box">
+                <h2>SIGUENOS</h2>
+                <div class="red-social">
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                    <a href="#" class="fa fa-youtube"></a>
+                </div>
+            </div>
+        </div>
+        <div class="group-2">
+            <small>&copy; 2022 <b>University Maps</b> - Todos los Derechos Reservados.</small>
+        </div>
+    </footer>
 
-    <iframe class="footerframe" src="footer.html" frameborder="0"></iframe>
     
 
+
+    <script src="js/menu.js"></script>
     <script src="./js/slider.js"></script>
-    <script src="./js/menu.js"></script>
+
 </body>
 
 </html>
